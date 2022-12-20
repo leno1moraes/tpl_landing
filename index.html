@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Carousel Template · Bootstrap v5.2</title>
+
+    <link href="bootstrap/assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      body {
+            background: url(imgs/CHF7007.jpg) no-repeat center center fixed;
+            height: 100%;
+            width: 100%;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            font-family: 'Open Sans', sans-serif;
+      }
+
+      .box-estilos{
+        height: 10rem;
+        max-width: 18rem;
+        background: rgb(255 255 255 / 60%);
+
+      }
+
+      @media screen and (max-width: 600px) {
+        .estilos-grid{
+          width: 100%;
+        }
+      }
+
+      @media screen and (min-width: 700px) {
+        .estilos-grid{
+          width: 50%;
+        }
+      }
+
+      @media screen and (min-width: 700px) {
+        .cards-estilos{
+          position: fixed;
+          right: calc(50% - 100vw);
+          left: 0;
+          top: 40%;
+          bottom: 0;
+        }
+      }
+    </style>
+
+  </head>
+<body>
+  
+<!-- HEADER -->
+<header>
+
+</header>
+
+<main>
+
+  <div class="container cards-estilos">
+    <div class="container estilos-grid">
+
+      <div class="row">
+
+        <div class="col">
+          <div class="card align-items-center box-estilos" >      
+              <div class="dropdown mt-5">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  Escolha o campus
+                </button>      
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">Alta Floresta</a></li>        
+                  <li><a class="dropdown-item" href="#">Cuiabá</a></li>
+                  <li><a class="dropdown-item" href="#">Sinop</a></li>
+                </ul>      
+              </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card align-items-center box-estilos" >                                               
+            <img class="img-fluid mt-2" width="40%" height="40%" src="imgs/logo reitoria vertical png.png" alt="Logo IFMT">
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+</footer>
+
+
+<script src="bootstrap/assets/dist/js/bootstrap.bundle.min.js"></script>
+    
+</body>
+</html>
